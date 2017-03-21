@@ -1,4 +1,4 @@
-const twitterMaxCharCount = 140;
+//const twitterMaxCharCount = 140;
 // need to figure out the best way to cache this daily 
 // so that it isn't hardcoded
 //
@@ -66,7 +66,7 @@ function breakTextOnSpaces(input, maxCharLength, firstMaxCharLength) {
     return brokenInput;
 }
 
-function formatTweet(tweet) {
+function formatTweet(tweet,twitterMaxCharCount) {
     var cutOff;
     if (tweet.cutOff === undefined) {
         cutOff = ' ...';
